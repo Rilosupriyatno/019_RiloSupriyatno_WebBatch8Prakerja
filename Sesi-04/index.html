@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 019_RiloSupriyatno -->
+    <!-- Menghitung luas lingkaran -->
+
+    <!-- Memasukkan nilai jari-jari -->
+    <input type="number" placeholder="Masukkan jari-jari" id="jari" />
+    <!-- Menjalankan fungsi javascript menhitung luas -->
+    <button onclick="keliling()">Hitung</button>
+    <!-- Hasil output setelah perhitungan -->
+    Hasil : <span id="hasil"></span>
+    <script>
+      // fungsi perhitungan keliling
+      function keliling() {
+        // variabel menampung rumus yakni Math.PI(3.14)
+        // menjadikan inputan string menjadi float menggunakan parseFloat
+        var rumus = 2 * Math.PI * parseFloat(jari.value);
+        // mengirimkan hasil ke HTML dengan maksimal angka dibelakang koma adalah 1 angka menggunakan toFixed
+        document.getElementById("hasil").innerHTML = rumus.toFixed(1);
+      }
+    </script>
+  </body>
+</html>
