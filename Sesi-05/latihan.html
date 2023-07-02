@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan</title>
+  </head>
+  <body>
+    <label>Input 1</label>
+    <input type="text" id="text" />
+    <br />
+    <label>input 2</label>
+    <input type="number" id="number" />
+    <br />
+    <button onclick="cetak()">Submit</button>
+    <ol id="list"></ol>
+
+    <script>
+      // const nama_variabel= document.getElementById("nama_variabel")
+      const txt = document.getElementById("text");
+      const nm = document.getElementById("number");
+      const lst = document.getElementById("list");
+      let i = 0;
+      function cetak() {
+        for (let y = 0; y < 5; y++) {
+          lst.innerHTML = lst.innerHTML + "<li>" + txt.value + "</li>";
+        }
+        while (i < 5) {
+          lst.innerHTML = lst.innerHTML + "<li>" + nm.value + "</li>";
+          i = i + 1;
+        }
+      }
+    </script>
+  </body>
+</html>

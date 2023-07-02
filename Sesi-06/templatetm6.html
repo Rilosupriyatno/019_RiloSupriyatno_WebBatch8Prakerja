@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Mandiri 6</title>
+  </head>
+
+  <body>
+    <p class="paragraf">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+    <p class="paragraf2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+    <p class="paragraf3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+
+    <script>
+      var i = 0;
+      function change() {
+        var doc = document.getElementsByClassName("paragraf")[0];
+        var warna = ["black", "red"];
+        doc.style.color = warna[i];
+        i = (i + 1) % warna.length;
+      }
+      const i1 = setInterval(change, 1000);
+      setTimeout(() => {
+        clearInterval(i1);
+      }, 10000);
+      function change2() {
+        var doc = document.getElementsByClassName("paragraf2")[0];
+        var warna = ["green", "black"];
+        doc.style.color = warna[i];
+        i = (i + 1) % warna.length;
+      }
+      const i2 = setInterval(change2, 1000);
+      setTimeout(() => {
+        clearInterval(i2);
+      }, 10000);
+      function change3() {
+        var doc = document.getElementsByClassName("paragraf3")[0];
+        var warna = ["black", "blue"];
+        doc.style.color = warna[i];
+        i = (i + 1) % warna.length;
+      }
+      const i3 = setInterval(change3, 1000);
+      setTimeout(() => {
+        clearInterval(i3);
+      }, 10000);
+    </script>
+  </body>
+</html>
